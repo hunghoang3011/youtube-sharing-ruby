@@ -1,0 +1,29 @@
+# This file is used by the Rails application to connect to the database.
+# It is divided into sections for different environments, such as development, test, and production.
+
+# The development section is used for development and testing.
+development:
+  adapter: postgresql
+  encoding: utf8
+  database: my_app_development
+  pool: 5
+  username: my_app
+  password: my_app_password
+
+# The test section is used for testing.
+test:
+  adapter: postgresql
+  encoding: utf8
+  database: my_app_test
+  pool: 5
+  username: my_app
+  password: my_app_password
+
+# The production section is used for production.
+production:
+  adapter: postgresql
+  encoding: utf8
+  database: my_app_production
+  pool: 5
+  username: my_app
+  password: my_app_password

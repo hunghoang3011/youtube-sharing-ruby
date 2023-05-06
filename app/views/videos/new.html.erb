@@ -1,0 +1,22 @@
+<h1>New Video</h1>
+
+<%= form_for @video do |f| %>
+  <div class="field">
+    <%= f.label :title %><br />
+    <%= f.text_field :title %>
+  </div>
+
+  <div class="field">
+    <%= f.label :description %><br />
+    <%= f.text_area :description %>
+  </div>
+
+  <div class="field">
+    <%= f.label :video_file %><br />
+    <%= f.file_field :video_file %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit "Create Video" %>
+  </div>
+<% end %>
